@@ -90,7 +90,7 @@ for i in range(5):
             break
         # if people have left, gemsleft is the remainder of gemsleft divided by how many people left
         if peoplewholeft > 0:
-            gemsleft += gemsleft % peoplewholeft
+            gemsleft = gemsleft % peoplewholeft
             # remove all instances of "a" in hazards if one person left
             if peoplewholeft == 1:
                 # ban all recovered artifacts
@@ -110,7 +110,7 @@ for i in range(5):
             value = int(userinput)
             # points to earn is incremented by the euclidian division of the card value by the number of players, and gemsleft is the remainder
             pointstoearn += math.floor(value / players)
-            gemsleft = value % players
+            gemsleft += value % players
         # else add it to onboard
         else:
             onboard.append(userinput)
