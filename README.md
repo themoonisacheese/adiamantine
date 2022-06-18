@@ -11,3 +11,8 @@ the script automatically removes appropriate cards from play from the current ro
 
 # prereqs
 none
+
+# credits
+this was developped to test github copilot, as is probably evident by the inane comments
+
+copilot is so good it's scary.
